@@ -1,0 +1,231 @@
+/* header linkes */
+.topnav{
+  overflow: auto;
+  background-color: #0b132b;
+}
+
+.topnav a{
+  float:left;
+  display: block;
+  color:#5bc0be;
+  text-align: center;
+  padding: 10 px 14px;
+  font-size:28px;
+  width: 14.28%;
+
+  text-decoration: none;
+}
+
+
+/* change roll over color*/
+.topnav a:hover{
+  background-color: #ddd;
+  color: #000;
+}
+
+
+/* ------------------------------------------------------ */
+
+/* The search bar (whole) max wideth will be 250px */
+.animalSearch{
+  position:relative;
+  width: 100%;
+  margin-left: 3%
+}
+
+.animalSearch,
+.animalSearch * {
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+
+.animalSearch,
+.animalSearch-inputContainer{
+  border-radius: 5px;
+}
+
+/* When user focus on the inputfile, a light box shadow appear*/
+.animalSearch:focus-within{
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+/* gray search box inpit Container*/
+.animalSearch-inputContainer{
+  display: inline-flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6px;
+  background: #eeeeee;
+
+}
+
+/* when user click on the input box, background gone*/
+.animalSearch-inputContainer:focus-within{
+  background: #ffffff;
+
+}
+
+.animalSearch-input{
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  width:50%;
+  padding:0 6px;
+  background: transparent;
+}
+
+#animalSearch-resultsContainer{
+  max-height: 250px;
+  overflow-y: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.1s, opacity 0.1s;
+}
+
+.animalSearch-resultsContainer--visible{
+  visibility: visible;
+  opacity: 1;
+}
+
+.animalSearch-results{
+  display: block;
+  color: #333333;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.animalSearch-results:hover{
+  background: #eeeeee;
+}
+
+.animalSearch-results:not(:last-of-type){
+  border-bottom: 1px solid #eeeeee;
+}
+
+.animalTable{
+  margin-left: 15px;
+  width: 95%;
+}
+
+.animalTable-Info{
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.animalTable tbody tr {
+  border-bottom: 1px solid #dddddd;
+  text-align:center;
+}
+
+.animalTable tbody tr {
+  border-bottom: 1px solid #dddddd;
+  text-align:center;
+}
+
+.animalTable tbody tr:nth-of-type(even){
+  background-color: #f3f3f3;
+  text-align:center;
+}
+
+.animalTable tbody tr:last-of-type{
+  border-bottom: 2px solid #009879;
+  text-align: center;
+}
+
+.animalTable tbody tr.active-row {
+  font-weight: bold;
+  color:009879;
+  text-align:center;
+}
+
+#tableResult{
+  line-height: 1.5;
+  margin:8px 0;
+  font-size: 14px;
+}
+
+.email-container{
+  margin-top: 5px;
+  position: relative;
+  box-sizing:border-box;
+  width: 100%;
+  margin-left: 15%
+  min-height:100vh;
+  padding:2rem;
+  background-color: #f1faee;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.follow-email-form{
+  width: 100%;
+  max-width: 820px;
+  height:500px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2,1fr) ;
+}
+
+.email-info{
+  background-color: #a8dadc;
+  position: relative;
+}
+
+.email-info-words{
+  font-size: 45px;
+  margin-left: 40px;
+  font-family: fantasy, cursive;
+  color: #fffffc;
+}
+
+/*Ask for user input: name, email*/
+.email-input-container{
+  margin-left: 15px;
+  margin-top: 85px;
+  margin-right:30px;
+}
+
+#fDog,
+#fCat{
+  margin-right:10px;
+}
+
+#fName,
+#fEmail,
+#fDog,
+#fCat{
+  border: 2px solid #0099CC;
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+
+/* submit button*/
+#emailInfo{
+  margin-top: 20px;
+  margin-left: 25px;
+  background: linear-gradient(90deg,#0162c8,#e63946);
+  border: 2px solid #0099CC;
+  border-radius: 6px;
+  font-size: 20px;
+  padding: 5px 15px;
+}
+
+/*Ask for user input*/
+h4{
+    margin-left: 10px;
+    color: #fffffc;
+}
+
+
+.follow-info{
+  background-color: #457b9d;
+  position: relative;
+}

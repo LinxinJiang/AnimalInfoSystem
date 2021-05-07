@@ -1,0 +1,112 @@
+<!Doctype HTML>
+
+<html>
+<head>
+	<title>Explore</title>
+	<link rel="icon" type="image/jpg" href="Actual.png"> 	<!--icon-->
+	<link href="exploreStyle.css" rel="stylesheet" type="text/css"/>
+	<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script> <!--Icon icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="jquery-3.5.1.js" charset="UTF-8"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+	<!--FaceBook share button (JavaScript SDK)-->
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="I4IFKrAs"></script>
+	<script async defer crossorigin="twitter-share-button" src="https://twitter.com/intent/tweet"></script>
+
+
+
+	<center>
+		<!-- header-->
+
+		<div class="topnav">
+			<a href="MainPage.html">Home Page</a>
+			<a href="Cat.html">Cats</a>
+			<a href="Dog.html">Dogs</a>
+			<a href="Q&A.html">Q & A </a>
+      <a href="Explore.html">Explore</a>
+			<a href="Donate.html">Donate</a>
+			<a href="Credit.html">Credit</a>
+		</div>
+	</center>
+
+	<br><br><br><br><br>
+
+	<!-- <div class="waitingList">
+		<h2>Waiting List</h2>
+		<p></p>
+		<ul class="animal">
+			<li>Loading Tapas</li>
+		</ul>
+		<form class="add-animal">
+			<input type="text" name="item" placeholder="Animal's ID" required>
+			<input type="submit" value="+ Add Animal">
+		</form>
+	</div>
+
+	<br><br><br><br><br> -->
+
+<!-- Search -->
+	<!-- Container for the entire search bar-->
+	<div id="searchAnimal" class ="animalSearch">
+		<!-- search input-->
+		<div class ="animalSearch-inputContainer">
+				<input id="searchInput" class="animalSearch-input" type="text" placeholder="Enter name">
+				<i class="material-icons instant-search__icon">search</i>
+			</div>
+			<div class="animalSearch-resultsContainer">
+				<a herf="#" class="animalSearch-results">
+				<table class="animalTable">
+					<tr class = "animalTable-Info">
+						<th>ID</th>
+						<th>Species</th>
+						<th>Name</th>
+						<th>Age</th>
+						<th>Gender</th>
+						<th>Weight</th>
+						<th>Location</th>
+					</tr>
+
+					<tbody id = "tableResult">
+
+					</tbody>
+
+				</table>
+
+			</div>
+		</div>
+
+	<form id="animalEmail" onsubmit="return getEmailInfo();" method="post"  method="GET">
+		<div class="email-container">
+			<div class="follow-email-form">
+				<div class="email-info">
+					<p class="email-info-words"><br>Leave your email. <br><br>We will send you an animal diary every month.</p>
+				</div>
+				<div class="follow-info">
+					<div class="email-input-container">
+						<label for="fName" ><h4>Enter yor name: </h4></label>
+						<input id="fName" name="fName" type = "text">
+					</div>
+					<div class="email-input-container">
+						<label for="fEmail" ><h4>Enter your email: </h4></label>
+						<input id="fEmail" name="fEmail" type = "text">
+					</div>
+
+					<div class="email-input-container">
+						<label for="fCat" ><h4>Cat Diary : </h4></label>
+						<input id="fCat" name="fCat" type = "checkbox">
+						<label for="fDog" ><h4>Dog Diary : </h4></label>
+						<input id="fDog" name="fDog" type = "checkbox">
+					</div>
+					<button id="emailInfo" type = "button" onclick="getEmailInfo()">Submit</button>
+				</div>
+			</div>
+		</div>
+	</form>
+	<script src="exploreScript.js"></script>
+	</body>
+</html>
