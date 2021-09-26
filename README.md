@@ -2,6 +2,7 @@
 
 ## About The Project
   This is a system for WePets(an animal adption webiste)
+  Language: Java
 
 ## Getting Started
 
